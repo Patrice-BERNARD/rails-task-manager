@@ -1,0 +1,13 @@
+<div class="container mx-3 my-3">
+<h1>Détail de la tâche : <strong><%= @task.title %></strong></h1>
+<ul>
+  <li>---------------------------</li>
+  <li><%= @task.details %></li>
+  <li>Tâche réalisée ? : <strong><%= @task.completed %></strong> </li>
+  <li>---------------------------</li>
+</ul>
+
+<button type="button" class="btn btn-outline-warning"><%= link_to "Editer la tâche", edit_task_path, class:"link-underline link-underline-opacity-0" %></button>
+<br><br>
+<%= link_to " back", tasks_path, class:"fa-regular fa-circle-left link-underline link-underline-opacity-0" %>
+</div>
